@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 Apr, 2021 1:32:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.vvp.web.PersonalDetails" table="personal_details" catalog="ecommerce21" optimistic-lock="version">
+        <id name="detailId" type="java.lang.Integer">
+            <column name="detailId" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="int">
+            <column name="userId" not-null="true" />
+        </property>
+        <property name="userName" type="string">
+            <column name="userName" length="100" not-null="true" />
+        </property>
+        <property name="mobileNumber" type="string">
+            <column name="mobileNumber" length="10" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="500" not-null="true" />
+        </property>
+        <property name="paymentMethod" type="string">
+            <column name="paymentMethod" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

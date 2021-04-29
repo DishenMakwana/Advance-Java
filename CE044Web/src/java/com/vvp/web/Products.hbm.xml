@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 Apr, 2021 1:32:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.vvp.web.Products" table="products" catalog="ecommerce21" optimistic-lock="version">
+        <id name="productOrderId" type="java.lang.Integer">
+            <column name="productOrderId" />
+            <generator class="identity" />
+        </id>
+        <property name="orderId" type="int">
+            <column name="orderId" not-null="true" />
+        </property>
+        <property name="productId" type="int">
+            <column name="productId" not-null="true" />
+        </property>
+        <property name="productName" type="string">
+            <column name="productName" length="100" not-null="true" />
+        </property>
+        <property name="productPrice" type="double">
+            <column name="productPrice" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="productQty" type="int">
+            <column name="productQty" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,40 @@
+SMAP
+adminProducts_jsp.java
+JSP
+*S JSP
+*F
++ 0 adminProducts.jsp
+adminProducts.jsp
++ 1 ecomHeader.jsp
+ecomHeader.jsp
++ 2 connectionDB.jsp
+connectionDB.jsp
++ 3 ecomFooter.jsp
+ecomFooter.jsp
+*L
+5,8:57
+5#1,51:64
+12#0,18:114
+29:132
+5#2,7:133
+11:15
+11:139
+13,7:141
+19:148
+30#0,61:149
+91,31:211
+121,3:242
+124,3:245,3
+127:254,5
+128:259,3
+129,2:262
+131:264,3
+132,6:267
+138:273,3
+139,7:276
+146,2:284
+147,6:286
+153,13:293
+165,3:306
+5#3,103:309
+*E

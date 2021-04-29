@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 Apr, 2021 1:32:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.vvp.web.User" table="user" catalog="ecommerce21" optimistic-lock="version">
+        <id name="userid" type="java.lang.Integer">
+            <column name="userid" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="100" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="100" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="role" type="string">
+            <column name="role" length="100" not-null="true" />
+        </property>
+        <property name="detailId" type="int">
+            <column name="detailId" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
